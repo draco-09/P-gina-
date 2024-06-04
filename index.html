@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más Colombiano que Nunca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>Más Colombiano que Nunca</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#cultura">Cultura</a></li>
+                <li><a href="#monumentos">Monumentos</a></li>
+                <li><a href="#zona">Zona</a></li>
+                <li><a href="#entretenimiento">Entretenimiento</a></li>
+                <li><a href="#rutas-turisticas">Rutas Turísticas</a></li>
+                <li><a href="#calendario">Calendario</a></li> <!-- Nueva opción -->
+            </ul>
+        </nav>
+    </div>
+    <div class="session">
+        <a href="#sesion" id="sessionButton">Sesión</a>
+    </div>
+    <div class="session-form" id="sessionForm">
+        <h2>Sesión</h2>
+        <label for="username">Correo o nombre</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password">
+        <div class="or">o</div>
+        <a href="#registro" class="register-link">Registro</a>
+    </div>
+    <!-- Nuevo formulario para el Calendario -->
+    <div class="calendar-form" id="calendarForm">
+        <h2>Calendario</h2>
+        <label for="zone">Zona de Colombia:</label>
+        <input type="text" id="zone" name="zone" placeholder="Ej: Andina, Pacífica, etc.">
+        <label for="city">Ciudad:</label>
+        <input type="text" id="city" name="city" placeholder="Ej: Bogotá, Medellín, etc.">
+        <button id="calendarSubmit">Mostrar Calendario</button>
+    </div>
+    <div class="calendar-container"></div> <!-- Aquí se mostrará el calendario -->
+    <script src="script.js"></script>
+</body>
+</html>
